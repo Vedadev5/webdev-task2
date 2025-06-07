@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact & To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌟 My Awesome Web App</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">Tasks</a>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+    <section class="contact-form">
+      <h2>📬 Contact Us</h2>
+      <form id="contactForm">
+        <label>Name: <input type="text" id="name" required /></label>
+        <label>Email: <input type="email" id="email" required /></label>
+        <label>Message: <textarea id="message" required></textarea></label>
+        <button type="submit">Send</button>
+        <p id="formMsg"></p>
+      </form>
+    </section>
+
+    <section class="todo-list">
+      <h2>✅ To-Do List</h2>
+      <div id="todoApp">
+        <input type="text" id="taskInput" placeholder="Enter a task..." />
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Internship Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+s
